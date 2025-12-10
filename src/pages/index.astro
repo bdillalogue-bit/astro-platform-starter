@@ -1,144 +1,187 @@
----
-import Layout from '../layouts/Layout.astro';
-import Markdown from '../components/Markdown.astro';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marriott Construction | Quality Builds Since Day One</title>
+  <meta name="description" content="Marriott Construction – Professional commercial and residential construction services."/>
 
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
 
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
----
-
-<h2>Welcome to Marriott Construction</h2>
-<script>window.enableEventObserver=true</script>
-<script src="https://cdn.jotfor.ms/s/static/1619869235b/static/prototype.forms.js" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/s/static/1619869235b/static/jotform.forms.js" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/s/static/1619869235b/js/stripeSCA.js" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/s/static/1619869235b/js/payments/paymentUtils.js" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/s/static/1619869235b/js/payments/validategateways.js" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/s/umd/ecef296c037/for-form-branding-footer.js" type="text/javascript" defer></script>
-<script src="https://cdn.jotfor.ms/s/static/1619869235b/js/vendor/smoothscroll.min.js" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/s/static/1619869235b/js/errorNavigation.js" type="text/javascript"></script>
-<script type="text/javascript">	JotForm.newDefaultTheme = true;
-	JotForm.extendsNewTheme = false;
-	JotForm.singleProduct = false;
-	JotForm.newPaymentUIForNewCreatedForms = false;
-	JotForm.texts = {"confirmEmail":"E-mail does not match","pleaseWait":"Please wait...","validateEmail":"You need to validate this e-mail","confirmClearForm":"Are you sure you want to clear the form","lessThan":"Your score should be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","required":"This field is required.","requireOne":"At least one field required.","requireEveryRow":"Every row is required.","requireEveryCell":"Every cell is required.","email":"Enter a valid e-mail address","alphabetic":"This field can only contain letters","numeric":"This field can only contain numeric values","alphanumeric":"This field can only contain letters and numbers.","cyrillic":"This field can only contain cyrillic characters","url":"This field can only contain a valid URL","currency":"This field can only contain currency values.","fillMask":"Field value must fill mask.","uploadExtensions":"You can only upload following files:","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","gradingScoreError":"Score total should only be less than or equal to","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","maxDigitsError":"The maximum digits allowed is","minCharactersError":"The number of characters should not be less than the minimum value:","maxCharactersError":"The number of characters should not be more than the maximum value:","freeEmailError":"Free email accounts are not allowed","minSelectionsError":"The minimum required number of selections is ","maxSelectionsError":"The maximum number of selections allowed is ","pastDatesDisallowed":"Date must not be in the past.","dateLimited":"This date is unavailable.","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","ageVerificationError":"You must be older than {minAge} years old to submit this form.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","chooseAFile_infoMessage":"Choose a file","maxFileSize_infoMessage":"Max. file size","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","ccInvalidNumber":"Credit Card Number is invalid.","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingProduct":"Please select at least one product.","ccMissingDonation":"Please enter numeric values for donation amount.","disallowDecimals":"Please enter a whole number.","restrictedDomain":"This domain is not allowed","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","requiredLegend":"All fields marked with * are required and must be filled.","geoPermissionTitle":"Permission Denied","geoPermissionDesc":"Check your browser's privacy settings.","geoNotAvailableTitle":"Position Unavailable","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoTimeoutTitle":"Timeout","geoTimeoutDesc":"Please check your internet connection and try again.","selectedTime":"Selected Time","formerSelectedTime":"Former Time","cancelAppointment":"Cancel Appointment","cancelSelection":"Cancel Selection","confirmSelection":"Confirm Selection","noSlotsAvailable":"No slots available","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","multipleError":"There are {count} errors on this page. Please correct them before moving on.","oneError":"There is {count} error on this page. Please correct it before moving on.","doneMessage":"Well done! All errors are fixed.","invalidTime":"Enter a valid time","doneButton":"Done","reviewSubmitText":"Review and Submit","nextButtonText":"Next","prevButtonText":"Previous","seeErrorsButton":"See Errors","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","soldOut":"Sold Out","justSoldOut":"Just Sold Out","selectionSoldOut":"Selection Sold Out","subProductItemsLeft":"({count} items left)","startButtonText":"START","submitButtonText":"Submit","submissionLimit":"Sorry! Only one entry is allowed. <br> Multiple submissions are disabled for this form.","reviewBackText":"Back to Form","seeAllText":"See All","progressMiddleText":"of","fieldError":"field has an error.","error":"Error"};
-	JotForm.newPaymentUI = true;
-	JotForm.isLaterCharge = "immediately";
-	JotForm.originalLanguage = "en";
-	JotForm.isFormViewTrackingAllowed = true;
-	JotForm.replaceTagTest = true;
-	JotForm.activeRedirect = "thanktext";
-	JotForm.uploadServerURL = "https://upload.jotform.com/upload";
-	JotForm.clearFieldOnHide="disable";
-	JotForm.submitError="jumpToFirstError";
-	window.addEventListener('DOMContentLoaded',function(){window.brandingFooter.init({"formID":253428759521060,"campaign":"powered_by_jotform_le","isCardForm":false,"isLegacyForm":true,"formLanguage":"en"})});	JotForm.isFullSource = true;
-
-	JotForm.init(function(){
-	/*INIT-START*/
-      JotForm.setStripeSettings('pk_test_51SceFZRNZ03QCtrSnFbiT6KoMX0BMkZLSbAG48hQ8i1RdH4WTwGn3Q74bPgVxphp3RkBzYqch3DPSBvYYCKa2bp300oKCS6E6J', 'none', 'none', '', 'none', '0');
-if (window.JotForm && JotForm.accessible) $('input_4').setAttribute('tabindex',0);
-      JotForm.alterTexts({"ageVerificationError":"You must be older than {minAge} years old to submit this form.","alphabetic":"This field can only contain letters","alphanumeric":"This field can only contain letters and numbers.","cancelAppointment":"Cancel Appointment","cancelSelection":"Cancel Selection","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccInvalidNumber":"Credit Card Number is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingDonation":"Please enter numeric values for donation amount.","ccMissingProduct":"Please select at least one product.","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","chooseAFile_infoMessage":"Choose a file","confirmClearForm":"Are you sure you want to clear the form","confirmEmail":"E-mail does not match","confirmSelection":"Confirm Selection","currency":"This field can only contain currency values.","cyrillic":"This field can only contain cyrillic characters","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","dateLimited":"This date is unavailable.","disallowDecimals":"Please enter a whole number.","doneButton":"Done","doneMessage":"Well done! All errors are fixed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","email":"Enter a valid e-mail address","error":"Error","fieldError":"field has an error.","fillMask":"Field value must fill mask.","formerSelectedTime":"Former Time","freeEmailError":"Free email accounts are not allowed","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoNotAvailableTitle":"Position Unavailable","geoPermissionDesc":"Check your browser's privacy settings.","geoPermissionTitle":"Permission Denied","geoTimeoutDesc":"Please check your internet connection and try again.","geoTimeoutTitle":"Timeout","gradingScoreError":"Score total should only be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","invalidTime":"Enter a valid time","justSoldOut":"Just Sold Out","lessThan":"Your score should be less than or equal to","maxCharactersError":"The number of characters should not be more than the maximum value:","maxDigitsError":"The maximum digits allowed is","maxFileSize_infoMessage":"Max. file size","maxSelectionsError":"The maximum number of selections allowed is ","minCharactersError":"The number of characters should not be less than the minimum value:","minSelectionsError":"The minimum required number of selections is ","multipleError":"There are {count} errors on this page. Please correct them before moving on.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","nextButtonText":"Next","noSlotsAvailable":"No slots available","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","numeric":"This field can only contain numeric values","oneError":"There is {count} error on this page. Please correct it before moving on.","pastDatesDisallowed":"Date must not be in the past.","pleaseWait":"Please wait...","prevButtonText":"Previous","progressMiddleText":"of","required":"This field is required.","requiredLegend":"All fields marked with * are required and must be filled.","requireEveryCell":"Every cell is required.","requireEveryRow":"Every row is required.","requireOne":"At least one field required.","restrictedDomain":"This domain is not allowed","reviewBackText":"Back to Form","reviewSubmitText":"Review and Submit","seeAllText":"See All","seeErrorsButton":"See Errors","selectedTime":"Selected Time","selectionSoldOut":"Selection Sold Out","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","soldOut":"Sold Out","startButtonText":"START","submissionLimit":"Sorry! Only one entry is allowed. &lt;br&gt; Multiple submissions are disabled for this form.","submitButtonText":"Submit","subProductItemsLeft":"({count} items left)","uploadExtensions":"You can only upload following files:","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","url":"This field can only contain a valid URL","validateEmail":"You need to validate this e-mail","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is"});
-	/*INIT-END*/
-	});
-
-   setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,{"name":"q1_header","qid":"1","text":"Secure Payment Form","type":"control_head"},{"description":"","name":"enterAmount","qid":"2","text":"Enter Amount Below","type":"control_stripe"},{"name":"q3_submit","qid":"3","text":"Submit Payment","type":"control_button"},{"description":"","name":"notes","qid":"4","subLabel":"","text":"Notes","type":"control_textbox"}]);}, 20); 
-</script>
-<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=7df20c2
-"/>
-<style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
-<link id="custom-font" type="text/css" rel="stylesheet" href="//cdn.jotfor.ms/fonts/?family=Inter" />
-<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.67229&themeRevisionID=65660e4b326633110492e01a"/>
-<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/s/static/1619869235b/css/styles/payment/payment_styles.css?3.3.67229" />
-<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/s/static/1619869235b/css/styles/payment/payment_feature.css?3.3.67229" />
-<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://submit.jotform.com/submit/253428759521060" method="post" name="form_253428759521060" id="253428759521060" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="253428759521060" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1765338347234" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="submitDate" name="submitDate" value="undefined" /><input type="hidden" id="buildDate" name="buildDate" value="1765338347234" /><input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input type="hidden" name="eventObserver" value="1" /><input type="hidden" name="eventObserverPayment" value="control_stripe" />
-  <div role="main" class="form-all">
-    <ul class="form-section page-section" role="presentation">
-      <li id="cid_1" class="form-input-wide" data-type="control_head">
-        <div style="display:table;width:100%">
-          <div class="form-header-group hasImage header-large" data-imagealign="Default">
-            <div class="header-logo"></div>
-            <div class="header-text httal htvam">
-              <h1 id="header_1" class="form-header" data-component="header">Secure Payment Form</h1>
-              <div id="subHeader_1" class="form-subHeader">Enter the amount you wish to pay and complete your payment securely.</div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="form-line" data-type="control_stripe" id="id_2" data-payment="true"><label class="form-label form-label-top" id="label_2" for="input_2" aria-hidden="false"> Enter Amount Below </label>
-        <div id="cid_2" class="form-input-wide" data-layout="full">
-          <div data-wrapper-react="true" class="stripe-payment-wrapper" data-stripe-currency="USD">
-            <div data-wrapper-react="true" class="product-container-wrapper">
-              <div class="filter-container"></div><input type="hidden" name="simple_fpc" data-payment_type="stripe" data-component="payment1" value="2" /><input type="hidden" name="payment_transaction_uuid" id="paymentTransactionId" /><input type="hidden" name="payment_version" id="payment_version" value="4" /><input type="hidden" name="payment_total_checksum" id="payment_total_checksum" data-component="payment2" /><input type="hidden" name="payment_discount_value" id="payment_discount_value" data-component="payment3" />
-              <div id="image-overlay" class="overlay-content" style="display:none"><img id="current-image" /><span class="lb-prev-button">prev</span><span class="lb-next-button">next</span><span class="lb-close-button">( X )</span><span class="image-overlay-product-container"></span></div><span class="form-sub-label-container" style="vertical-align:top"><input type="text" class="form-textbox validate[Numeric]" id="input_2_donation" name="q2_enterAmount[price]" data-component="paymentDonation" aria-labelledby="label_2" data-testid="donationInput" value="" /><span class="donation_currency">USD</span><label data-testid="donationSubLabel" class="form-sub-label" for="input_2_donation" style="min-height:13px">Amount</label></span>
-              <hr />
-            </div>
-            <div id="stripe-templates">
-              <div class="stripe-sca-template">
-                <div>
-                  <table class="payment-up-form-table" style="border:0;margin-bottom:10px" cellPadding="0" cellSpacing="0">
-                    <tbody>
-                      <tr>
-                        <td width="50%"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <table class="form-address-table payment-form-table" style="border:0" cellPadding="0" cellSpacing="0">
-                    <tbody>
-                      <tr>
-                        <th colSpan="2" style="text-align:left" id="ccTitle2">Credit Card Details</th>
-                      </tr>
-                      <tr>
-                        <td width="50%"><span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_2_cc_firstName" name="q2_enterAmount[cc_firstName]" class="form-textbox cc_firstName" data-defaultvalue="" size="20" placeholder="First Name" data-component="cc_firstName" aria-label="Credit Card First Name" aria-labelledby="" value="" /><label class="form-sub-label" for="input_2_cc_firstName" id="sublabel_cc_firstName" style="display:none">First Name</label></span></td>
-                        <td width="50%"><span class="form-sub-label-container" style="vertical-align:top"><input type="text" id="input_2_cc_lastName" name="q2_enterAmount[cc_lastName]" class="form-textbox cc_lastName" data-defaultvalue="" size="20" placeholder="Last Name" data-component="cc_lastName" aria-label="Credit Card Last Name" aria-labelledby="" value="" /><label class="form-sub-label" for="input_2_cc_lastName" id="sublabel_cc_lastName" style="display:none">Last Name</label></span></td>
-                      </tr>
-                      <tr class="if_cc_field">
-                        <td width="50%"><span class="form-sub-label-container" style="vertical-align:top">
-                            <div class="form-textbox cc_numberMount "></div><label class="form-sub-label" for="input_2_cc_number" id="sublabel_cc_number" style="display:none">Credit Card Number</label>
-                          </span></td>
-                        <td width="50%"><span class="form-sub-label-container" style="vertical-align:top">
-                            <div class="form-textbox cc_ccvMount "></div><label class="form-sub-label" for="input_2_cc_ccv" id="sublabel_cc_ccv" style="display:none">Security Code</label>
-                          </span></td>
-                      </tr>
-                      <tr>
-                        <td width="50%"><span class="form-sub-label-container" style="vertical-align:top">
-                            <div class="form-textbox cc_cardExpiryMount "></div><label class="form-sub-label" for="input_2_cc_card_expiry" id="sublabel_cc_card_expiry" style="display:none">Card Expiration</label>
-                          </span></td>
-                        <td width="50%">
-                      <tr style="display:none">
-                        <td><input id="stripesca_dummy" style="display:none" /></td>
-                      </tr>
-                      </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div id="payment-element" class="payment-element" style="border:0;display:none"></div><input id="stripePe_dummy" style="display:none" /><input id="useStripeFormPayment" name="useStripeFormPayment" type="hidden" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="form-line" data-type="control_textbox" id="id_4"><label class="form-label form-label-top form-label-auto" id="label_4" for="input_4" aria-hidden="false"> Notes </label>
-        <div id="cid_4" class="form-input-wide" data-layout="half"> <input type="text" id="input_4" name="q4_notes" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_4" value="" /> </div>
-      </li>
-      <li class="form-line" data-type="control_button" id="id_3">
-        <div id="cid_3" class="form-input-wide" data-layout="full">
-          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_3" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField legacy-submit" data-component="button" data-content="">Submit Payment</button></div>
-        </div>
-      </li>
-      <li style="display:none">Should be Empty: <input type="text" name="website" value="" type="hidden" /></li>
-    </ul>
-  </div>
- <input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="253428759521060" />
-  <script type="text/javascript">
-    var all_spc = document.querySelectorAll("form[id='253428759521060'] .si" + "mple" + "_spc");
-    for (var i = 0; i < all_spc.length; i++)
-    {
-      all_spc[i].value = "253428759521060-253428759521060";
+  <style>
+    :root {
+      --primary: #1a3c6e;
+      --secondary: #d4af37;
+      --dark: #111;
+      --light: #f8f9fa;
     }
-  </script>
-</form>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fff;
+    }
+    a { text-decoration: none; color: var(--primary); }
+
+    /* Header & Logo */
+    header {
+      background: var(--dark);
+      color: white;
+      padding: 1.5rem 5%;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: white;
+    }
+    .logo span {
+      color: var(--secondary);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&q=80');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.4rem;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--secondary);
+      color: #000;
+      padding: 14px 32px;
+      font-weight: 600;
+      border-radius: 50px;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background: #fff;
+      transform: scale(1.05);
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 5%;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: var(--primary);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .service-card {
+      background: #f9f9f9;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .service-card h3 {
+      color: var(--primary);
+      margin: 1rem 0;
+    }
+
+    /* Payment Section */
+    #payment {
+      background: #f4f4f4;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 3rem 5%;
+    }
+    footer a {
+      color: var(--secondary);
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.8rem; }
+      .logo { font-size: 1.8rem; }
+    }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">MARRIOTT <span>CONSTRUCTION</span></div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h1>Building Excellence. Delivering Trust.</h1>
+      <p>Professional construction services for commercial and residential projects in [Your City/Area]. Licensed • Bonded • Insured</p>
+      <a href="#payment" class="btn">Make a Payment</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>New Construction</h3>
+        <p>Ground-up commercial and residential builds with precision and quality.</p>
+      </div>
+      <div class="service-card">
+        <h3>Remodeling & Renovations</h3>
+        <p>Modern updates, kitchen/bath remodels, and full home transformations.</p>
+      </div>
+      <div class="service-card">
+        <h3>Project Management</h3>
+        <p>End-to-end oversight ensuring on-time and on-budget delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Make a Payment Section -->
+  <section id="payment">
+    <h2 class="section-title">Make a Payment</h2>
+    <div style="max-width: 900px; margin: 0 auto;">
+      <!-- JotForm Payment Embed -->
+      <script type="text/javascript" src="https://pci.jotform.com/jsform/253428759521060"></script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Marriott Construction. All rights reserved.</p>
+    <p>Licensed • Bonded • Insured | <a href="tel:+15551234567">(555) 123-4567</a> | <a href="mailto:info@marriottconstruction.com">info@marriottconstruction.com</a></p>
+  </footer>
+
+</body>
+</html>
